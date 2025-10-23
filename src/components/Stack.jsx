@@ -76,7 +76,7 @@ export default function Stack({
         return (
           <CardRotate key={card.id} onSendToBack={() => sendToBack(card.id)} sensitivity={sensitivity}>
             <motion.div
-              className="rounded-2xl overflow-hidden border-4 border-white"
+              className="rounded-2xl overflow-hidden border-3 border-amber-50"
               onClick={() => sendToBackOnClick && sendToBack(card.id)}
               animate={{
                 rotateZ: (cards.length - index - 1) * 4 + randomRotate,

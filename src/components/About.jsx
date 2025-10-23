@@ -1,26 +1,89 @@
+import heroImg from "../assets/img/adnan.webp";
+import PrimaryButton from "./Buttons/PrimaryButton";
+import AnimatedContent from "./AnimatedContent";
+import SplitText from "./SplitText";
+import TextType from "./TextType";
+import DecryptedText from "./DecryptedText";
 import Stack from "./Stack";
-import adnanImg from "../assets/img/adnan.webp";
 
-function AboutSection() {
+function AboutSection({ btnClick }) {
   const images = [
-    { id: 1, img: adnanImg  },
-    { id: 2, img: adnanImg  },
-    { id: 3, img: adnanImg  },
-    { id: 4, img: adnanImg  },
+    { id: 1, img: heroImg },
+    { id: 2, img: heroImg },
+    { id: 3, img: heroImg },
+    { id: 4, img: heroImg },
   ];
   return (
-    <div className="grid grid-cols-2">
-      <div className="bg-red-600 flex justify-center items-center">
-        <Stack
-          randomRotation={true}
-          sensitivity={50}
-          sendToBackOnClick={true}
-          cardDimensions={{ width: 300, height: 350 }}
-          cardsData={images}
-        />
-      </div>
-      <div className="bg-green-400 flex justify-center items-center">
-        <h1>Hello World!</h1>
+    <div className="py-16">
+      <AnimatedContent
+        distance={50}
+        direction="vertical"
+        duration={1.0}
+        delay={0.2}
+      >
+        <div className="mb-12 flex flex-col gap-y-2">
+          <h1 className="text-5xl font-bold text-center hover-animate-text-glow-w">
+            About Me
+          </h1>
+          <div className="relative w-12 h-2 bg-gray-700 rounded-full m-auto"></div>
+        </div>
+      </AnimatedContent>
+      <div className="flex justify-evenly items-center">
+        <div className="flex justify-center mr-4 cursor-target">
+          <Stack
+            randomRotation={true}
+            sensitivity={90}
+            sendToBackOnClick={true}
+            cardDimensions={{ width: 300, height: 400 }}
+            cardsData={images}
+          />
+        </div>
+        <div className="flex flex-col gap-y-3 w-[45%]">
+          <AnimatedContent
+            distance={50}
+            direction="vertical"
+            duration={1.0}
+            delay={0.4}
+          >
+            <div className="flex flex-col gap-y-2 cursor-target">
+              <p className="text-justify opacity-90 hover-animate-text-glow-w">
+                Nama lengkap saya Adnan Naufal Radityo H. Saya seorang pelajar,
+                murid tahun ketiga di SMA Negeri 3 Jember yang sebentar lagi
+                akan lulus dan melanjutkan studi di perguruan tinggi.
+              </p>
+              <p className="text-justify opacity-90 hover-animate-text-glow-w">
+                Saya mulai tertarik dengan pemrograman sejak SMP ketika membuat
+                mod untuk game minecraft dan itu kali pertama saya kenal dengan
+                pemrograman. saat itu saya menyadari bahwa pemrograman sangat
+                luas. Saya sangat menikmati dalam merancang sebuah UI, membuat
+                sebuah logika pemrograman, dan menerapkan ide dan kreatifitas
+                saya ke dalam kode program.
+              </p>
+              <p className="text-justify opacity-90 hover-animate-text-glow-w">
+                Tujuan utama saya memilih IT sebagai skills utama saya adalah
+                untuk membangun karir di perusahaan teknologi seperti Google dan
+                Microsoft.
+              </p>
+            </div>
+          </AnimatedContent>
+          <div className="flex gap-x-3">
+            <div className="cursor-target">
+              <PrimaryButton
+                labes="Download CV"
+                transDelay={0.2}
+                btnClick={btnClick}
+              />
+            </div>
+            <div className="cursor-target">
+              <PrimaryButton
+                labes="View Projects"
+                bgColor="bg-amber-50/0"
+                textColor="text-amber-50"
+                transDelay={0.3}
+              />
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );

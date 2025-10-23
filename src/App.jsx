@@ -18,7 +18,7 @@ function App() {
     <>
       <TargetCursor spinDuration={2} hideDefaultCursor={true} />
       <div className="bg-gray-950 text-amber-50 font-poppins">
-        <Navbar btnClick={handleClick} />
+        <Navbar />
         <NotificationBar
           message="Terimakasih Telah Mendownload 👌"
           positionX={showNotif ? "0%" : "120%"}
@@ -26,8 +26,8 @@ function App() {
         <div className="bg-linear-to-t from-amber-50/10 to-50% w-full h-screen">
           <HomeSection />
         </div>
-        <div className="bg-gray-950 border-t-2 border-b-2 border-gray-800 w-full h-screen">
-          <AboutSection />
+        <div className="bg-gray-950 border-t-2 border-b-2 border-gray-800 w-full h-full">
+          <AboutSection btnClick={handleClick} />
         </div>
       </div>
     </>
