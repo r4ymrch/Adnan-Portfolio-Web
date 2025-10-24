@@ -21,8 +21,8 @@ function Navbar({ btnClick }) {
         delay={0.25}
         reverse={true}
       >
-        <p className="text-3xl font-bold hover-animate-text-glow-w transition-smooth cursor-target">
-          Adnan Dev.
+        <p className="text-3xl font-semibold hover-animate-text-glow-w transition-smooth cursor-target">
+          <i className="fa-solid fa-code"></i> Adnan Dev.
         </p>
       </AnimatedContent>
       <AnimatedContent
@@ -32,7 +32,7 @@ function Navbar({ btnClick }) {
         delay={0.2}
         reverse={true}
       >
-        <ul className="flex items-center bg-gray-500/15 rounded-3xl border-2 border-gray-800 backdrop-blur-sm">
+        <ul className="flex items-center bg-gray-500/15 rounded-3xl border border-gray-800 backdrop-blur-sm">
           <NavItems label="Home" id="nav-items-1" aClass="selected" />
           <NavItems label="About" id="nav-items-2" />
           <NavItems label="Skills" id="nav-items-3" />

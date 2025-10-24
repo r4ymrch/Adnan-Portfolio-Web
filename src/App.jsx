@@ -15,7 +15,6 @@ function App() {
       setShowNotif(false);
     }, 3000);
   };
-
   return (
     <>
       <TargetCursor spinDuration={2} hideDefaultCursor={true} />
@@ -26,11 +25,7 @@ function App() {
           positionX={showNotif ? "0%" : "120%"}
         />
         <div className="bg-linear-to-t from-amber-50/10 to-50% w-full h-screen">
-          <Particles
-            alphaParticles
-            particleCount={300}
-            speed={0.05}
-          />
+          <Particles alphaParticles particleCount={300} speed={0.05} />
           <HomeSection />
         </div>
         <div className="bg-gray-950 border-t-2 border-b-2 border-gray-800 w-full h-full">
