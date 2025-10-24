@@ -19,7 +19,7 @@ function StatsCard({ labels = "", desc = "", icons = "" }) {
 
 function HomeSection() {
   return (
-    <div className="pt-12 overflow-x-hidden">
+    <div className="pt-10 overflow-x-hidden">
       <div className="flex justify-around items-center py-20 mb-16">
         <div className="flex flex-col gap-y-3 w-[35%]">
           <AnimatedContent
@@ -58,8 +58,8 @@ function HomeSection() {
             duration={1.0}
             delay={0.4}
           >
-            <div className="cursor-target">
-              <p className="text-[0.8rem]">
+            <div className="mt-2 cursor-target">
+              <p className="text-[0.8rem] text-justify">
                 A student passionate about IT. Transforming ideas and creativity
                 into code to create engaging programs. Focused on front-end web
                 development and high quality games.
@@ -104,7 +104,7 @@ function HomeSection() {
             duration={1.0}
             delay={0.6}
           >
-            <div className="flex flex-col gap-y-2">
+            <div className="flex flex-col gap-y-2 mt-2">
               <p className="text-xs font-semibold">
                 <i class="fa-solid fa-arrow-up-right-dots"></i> Quick Stats :
               </p>
@@ -143,10 +143,10 @@ function HomeSection() {
               scaleOnHover={1.2}
             />
             <div className="absolute top-0 left-0">
-              <i className="fa-brands fa-html5 text-5xl -translate-x-12 -translate-y-8 animate-float"></i>
-              <i className="fa-brands fa-css text-5xl translate-x-64 translate-y-8 animate-float"></i>
-              <i className="fa-brands fa-js text-6xl -translate-x-48 translate-y-56 animate-float"></i>
-              <i className="fa-brands fa-react text-7xl translate-x-16 translate-y-68 animate-float"></i>
+              <i className="fa-brands fa-html5 text-orange-500 text-5xl -translate-x-12 -translate-y-8 -rotate-4 animate-float"></i>
+              <i className="fa-brands fa-css text-purple-600 text-5xl translate-x-64 translate-y-8 rotate-4 animate-float"></i>
+              <i className="fa-brands fa-js text-yellow-300 text-6xl -translate-x-48 translate-y-56 -rotate-8 animate-float"></i>
+              <i className="fa-brands fa-react text-blue-400 text-7xl translate-x-16 translate-y-68 animate-float"></i>
             </div>
           </div>
         </AnimatedContent>
