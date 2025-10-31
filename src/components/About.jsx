@@ -74,6 +74,7 @@ function AboutSection({ btnClick }) {
             <div className="cursor-target">
               <PrimaryButton
                 labes="Download CV"
+                icons="fa-solid fa-download"
                 transDelay={0.1}
                 btnClick={btnClick}
               />
@@ -81,6 +82,7 @@ function AboutSection({ btnClick }) {
             <div className="cursor-target">
               <PrimaryButton
                 labes="View Projects"
+                icons="fa-solid fa-layer-group"
                 bgColor="bg-amber-50/0"
                 textColor="text-amber-50"
                 transDelay={0.2}
