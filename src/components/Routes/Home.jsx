@@ -1,9 +1,9 @@
-import heroImg from "../assets/img/adnan.webp";
-import PrimaryButton from "./Buttons/PrimaryButton";
-import AnimatedContent from "./AnimatedContent";
-import SplitText from "./SplitText";
-import TextType from "./TextType";
-import TiltedCard from "./TiltedCard";
+import heroImg from "../../assets/img/adnan.webp";
+import PrimaryButton from "../Buttons/PrimaryButton";
+import AnimatedContent from "../AnimatedContent";
+import SplitText from "../SplitText";
+import TextType from "../TextType";
+import TiltedCard from "../TiltedCard";
 
 function StatsCard({ labels = "", desc = "", icons = "" }) {
   return (

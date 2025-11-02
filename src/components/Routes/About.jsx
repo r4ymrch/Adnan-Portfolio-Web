@@ -1,7 +1,7 @@
-import heroImg from "../assets/img/adnan.webp";
-import PrimaryButton from "./Buttons/PrimaryButton";
-import AnimatedContent from "./AnimatedContent";
-import Stack from "./Stack";
+import heroImg from "../../assets/img/adnan.webp";
+import PrimaryButton from "../Buttons/PrimaryButton";
+import AnimatedContent from "../AnimatedContent";
+import Stack from "../Stack";
 
 function AboutSection({ btnClick }) {
   const images = [

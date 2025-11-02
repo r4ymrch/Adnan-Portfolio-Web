@@ -3,9 +3,9 @@ import TargetCursor from "./components/TargetCursor";
 import Navbar from "./components/Navbar";
 import NotificationBar from "./components/Notifications";
 import Particles from "./components/Particles";
-import HomeSection from "./components/Home";
-import AboutSection from "./components/About";
-import SkillsSection from "./components/Skills";
+import HomeSection from "./components/Routes/Home";
+import AboutSection from "./components/Routes/About";
+import SkillsSection from "./components/Routes/Skills";
 
 function App() {
   const [showNotif, setShowNotif] = useState(false);

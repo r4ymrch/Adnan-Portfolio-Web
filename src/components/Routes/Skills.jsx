@@ -1,4 +1,4 @@
-import AnimatedContent from "./AnimatedContent";
+import AnimatedContent from "../AnimatedContent";
 
 function DisplayAllLogo({ data, selectedKeys }) {
   const allKeys = Object.keys(data);

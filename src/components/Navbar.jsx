@@ -2,9 +2,13 @@ import AnimatedContent from "./AnimatedContent";
 import SecondaryButton from "./Buttons/SecondaryButton";
 
 function NavItems({ label = "Items", aClass = "" }) {
+  const handleClick = () => {
+    alert("Jancuk Loe!");
+  };
   return (
     <li
       class={`px-6 py-3 rounded-3xl hover-animate-text-glow-w cursor-target ${aClass}`}
+      onClick={handleClick}
     >
       {label}
     </li>
